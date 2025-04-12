@@ -30,8 +30,13 @@ io.on("connection", (socket) => {
     io.emit("updateOrders", orders);
   });
 
-  socket.on("orderReady", (index) => {
-    orders.splice(index, 1);
+  socket.on("orderReady", (id) => {
+    orders.map(item=>{
+       if(item.id === id) {
+        console.log(item)
+        item.isDone = true;
+      }
+    })
     io.emit("updateOrders", orders);
   });
 

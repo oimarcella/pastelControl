@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+      "jsx": "react-jsx" // not need import React from 'react'
+    }
+  }
+  

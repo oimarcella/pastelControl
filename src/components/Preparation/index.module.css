@@ -5,13 +5,9 @@
     @media (max-width:800px) {
         padding:20px 20px;
     }
+
+    .orderDone{
+        opacity: .5;
+        background-color: rgba(227, 227, 227, 0.86);
+    }
 }
-.order{
-    width: 40%;
-    @media (max-width:600px) {
-            width: 50%;
-    }
-    @media (max-width:1200px) {
-            width: 80%;
-    }
-}  
