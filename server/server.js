@@ -9,7 +9,7 @@ app.use(cors());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:5173", 'https://pastel-control.vercel.app/'], // Vite
+    origin: ["http://localhost:5173", 'https://pastel-control.vercel.app/', '*'], // Vite
     methods: ["GET", "POST"]
   }
 });
