@@ -13,7 +13,7 @@ interface IFlavorsProviderProps {
 const FlavorsContext = createContext<FlavorsContextT | undefined>(undefined);
 
 export const FlavorsProvider = (props:IFlavorsProviderProps)=>{
-    const [flavors, setFlavors]= useState<string[]>([]);
+    const [flavors, setFlavors]= useState<string[]>(["Queijo", "Carne", "Pizza"]);
 
     function addNewFlavor(newFlavor:string){
         setFlavors(previous => [...previous, newFlavor])

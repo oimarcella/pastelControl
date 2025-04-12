@@ -1,5 +1,5 @@
 .pc-container{
-    padding:60px 90px !important;
+    padding:60px 90px;
     min-height: 100vh;
     
     @media (max-width:800px) {

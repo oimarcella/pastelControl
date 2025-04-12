@@ -41,6 +41,7 @@ const MakeOrder = () => {
       client,
       isDone: false, 
       id: orders.length+1,
+      hour: new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', second: '2-digit'}),
       items: flavors
         .filter((item) => quantity[item] > 0)
         .map((item) => ({ flavor:item, quantity: quantity[item] })),

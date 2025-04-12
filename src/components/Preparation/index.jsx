@@ -16,12 +16,12 @@ const Preparation = () => {
       socket.emit("getOrders");
 
       socket.on("updateOrders", (data) => {
-        const ordersOrdered  =  data.sort((x, y) => {
+        /*const ordersOrdered  =  data.sort((x, y) => {
           if(x.isDone && !y.isDone) return 1;
           if(!x.isDone && y.isDone) return -1;
           return 0;
-        });
-        setOrders(ordersOrdered);
+        });*/
+        setOrders(data.filter(item=> !item.isDone));
       });
   
       return () => {
@@ -58,7 +58,7 @@ const Preparation = () => {
                     Pedido #{order.id}
                   </span>
                   <span className="text-gray-500 text-sm">
-                    {new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'})}
+                    {order.hour}
                   </span>
                 </div>
                 
