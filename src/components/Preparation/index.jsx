@@ -3,7 +3,9 @@ import { io } from "socket.io-client";
 import socketServer from './../../socket.js'
 import styles from './index.module.css';
 
-const socket = io(socketServer);
+const socket = io(socketServer, {
+  transports: ["websocket"],
+});
 
 const Preparation = () => {
     const [orders, setOrders] = useState([]);

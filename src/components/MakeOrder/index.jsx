@@ -6,7 +6,9 @@ import './index.module.css';
 import style from './index.module.css';
 import useFlavors from "../../../context/FlavorsContext.js";
 
-const socket = io(socketServer);
+const socket = io(socketServer, {
+  transports: ["websocket"],
+});
 
 const MakeOrder = () => {
   const [orders, setOrders] = useState([]);
