@@ -9,7 +9,7 @@ app.use(cors());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:5173", // Vite
+    origin: ["http://localhost:5173", 'https://pastel-control.vercel.app/'], // Vite
     methods: ["GET", "POST"]
   }
 });
@@ -45,6 +45,8 @@ io.on("connection", (socket) => {
   });
 });
 
-server.listen(3001, () => {
-  console.log("Servidor rodando na porta 3001");
+const PORT = 3001
+server.listen(PORT, () => {
+  console.log("✌️😎 - Estou online ");
+  console.log(`Servidor rodando na porta ${PORT}`);
 });
