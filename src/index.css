@@ -42,6 +42,7 @@ body {
   height: 100vh;
   background-color: #c1d6d1;
   color: #242424;
+  overflow: hidden;
 }
 
 *::placeholder{

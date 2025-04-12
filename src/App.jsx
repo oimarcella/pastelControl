@@ -8,7 +8,7 @@ export default function App() {
   return (
     <Router>
      <header className="nav-container bg-blue-800">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
           <nav className="flex flex-wrap items-center justify-between py-3">
             <div className="flex items-center">
               {/* Se você tiver um logo, pode adicioná-lo aqui */}

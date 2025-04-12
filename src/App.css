@@ -69,7 +69,16 @@
 }
 
 @media (max-width: 640px) {
+  .logo{
+    margin-right: 0;
+    max-height: 35px;
+  }
   .nav-container {
     padding: 0.5rem 1rem;
+    align-items: center;
+  }
+  .nav-link{
+    font-size: 13px;
+    padding: 6px;
   }
 }
