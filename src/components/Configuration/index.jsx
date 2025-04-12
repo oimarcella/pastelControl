@@ -73,6 +73,7 @@ const Configuration = () =>{
         </div>
       )}
     </div>
+    <small className="text-blue-600 mt-5" style={{position:"absolute", bottom:"10px", textAlign:"center",width:"90%"}}><a href="https://github.com/oimarcella">@Desenvolvedor</a></small>
   </div>
 }
 export default Configuration;

@@ -107,6 +107,8 @@ const MakeOrder = () => {
           </button>
         </div>
       </div>
+
+      <small className="text-blue-600 mt-5" style={{position:"absolute", bottom:"10px"}}><a href="https://github.com/oimarcella">@Desenvolvedor</a></small>
     </div>
   );
 }

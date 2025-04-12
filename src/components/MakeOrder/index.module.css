@@ -1,5 +1,7 @@
 .pc-container{
+    position: relative;
     padding:60px 90px;
+    padding-bottom: 40px!important;
     min-height: 100vh;
     
     @media (max-width:800px) {
