@@ -27,5 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         #cache: 'npm'
     - run: npm install && npm test
-    #- run: npm test
     #- run: npm run build --if-present
+    - name: Trigger Vercel Deploy
+      run: curl -X post ${{ secrets.URL_TRIGGER_VERCEL_DEPLOY }}
