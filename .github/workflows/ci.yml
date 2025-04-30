@@ -29,4 +29,4 @@ jobs:
     - run: npm install && npm test
     #- run: npm run build --if-present
     - name: Trigger Vercel Deploy
-      run: curl -X post ${{ secrets.URL_TRIGGER_VERCEL_DEPLOY }}
+      run: curl -X POST ${{ secrets.URL_TRIGGER_VERCEL_DEPLOY }}
