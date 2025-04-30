@@ -20,7 +20,7 @@ export default function App() {
                 to="/" 
                 className={`px-4 py-2 text-slate-700 font-medium rounded-md transition-all duration-200 hover:bg-blue-50 nav-link`}
               >
-                Novo pedido*
+                Novo pedido
               </Link>
               <Link 
                 to="/preparacao" 

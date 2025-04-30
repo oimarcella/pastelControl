@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "echo \"Nenhum teste ainda\" && exit 0"
+    "test": ""echo \"Nenhum teste ainda\" && exit 0""
   },
   "dependencies": {
     "react": "^19.0.0",
