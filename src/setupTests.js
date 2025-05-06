@@ -1,5 +1,23 @@
 import '@testing-library/jest-dom' // jest-dom importado globalmente e funcionara em todos os testes
 
+beforeAll(() => {
+  vi.spyOn(window, "alert").mockImplementation(() => {});
+});
+
+
+const emitMock = vi.fn();
+const onMock = vi.fn();
+
+vi.mock('socket.io-client', () => {
+  return {
+      io: () => ({
+          emit: emitMock,
+          on: onMock,
+      })
+  };
+});
+
+export { emitMock, onMock };
 
 /* 
 // * mockando fetch globalmente para evitar chamadas a api

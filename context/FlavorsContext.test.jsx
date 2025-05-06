@@ -5,11 +5,6 @@ import { describe, expect, test } from 'vitest';
 
 function MockComponent() {
     const {flavors, addNewFlavor, deleteFlavor} = useFlavors();
-
-    /*useEffect  (() => {
-        addNewFlavor('Pipoca');
-        deleteFlavor('Queijo');
-    }, []);*/
     
     return (
         <div>
@@ -18,7 +13,6 @@ function MockComponent() {
                 <li key={index}>{flavor}</li>
                 ))}
             </ul>
-            {/**/}
             <button data-testid="addFlavorChocolate" onClick={() => addNewFlavor('Chocolate')}>Add Chocolate</button>
             <button data-testid="deleteFlavorCarne" onClick={() => deleteFlavor('Carne')}>Delete Carne</button>
             <button data-testid="deleteFlavorQueijo" onClick={() => deleteFlavor('Queijo')}>Delete Queijo</button>  
