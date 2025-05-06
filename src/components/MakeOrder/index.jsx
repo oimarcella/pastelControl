@@ -69,6 +69,7 @@ const MakeOrder = () => {
             placeholder="Digite o nome do cliente"
             value={client}
             onChange={(e) => setClient(e.target.value)}
+            data-testid="clientNameInput"
           />
         </div>
 
@@ -86,6 +87,7 @@ const MakeOrder = () => {
                     min="0"
                     value={quantity[flavor] || ""}
                     onChange={(e) => handleQuantityChange(flavor, e.target.value)}
+                    data-testid={`flavor-${flavor}`}
                   />
                 </label>
               </div>
@@ -97,6 +99,7 @@ const MakeOrder = () => {
         
         <div className="flex justify-center mt-5">
           <button 
+            type="button"
             className="bg-green-500 hover:bg-green-600 text-white font-medium px-6 py-3 rounded-md shadow-sm transition-colors duration-200 flex items-center"
             onClick={handleSubmit}
           >
