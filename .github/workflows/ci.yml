@@ -6,8 +6,6 @@ name: PastelControl CI - Continuous Integration
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
   build:
