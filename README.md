@@ -27,3 +27,6 @@ Finalmente são instaladas as dependências do projeto e rodados os testes para 
 
 Etapa 2 - Declara que depende da etapa 1 e de seu sucesso, define o ambiente de execução e dispara o deploy, somente uma vez, usando uma variável, que pode ser configurada nos secrets do GitHub.
 
+<img width="1892" height="820" alt="image" src="https://github.com/user-attachments/assets/3c14eee9-0599-45eb-9154-7227258affbb" />
+
+
